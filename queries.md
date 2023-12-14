@@ -63,3 +63,18 @@ db.students.find({name:"Gowtham", gpa:4})
 
 db.students.find({},{name:true})
 db.students.find({},{_id: false, name:true, gpa: true})
+
+## Update
+.updateOne(filter, update)
+
+### Set
+db.students.updateOne({name:"Gowtham"}, {$set:{fullTime: true}})
+
+### Unset
+db.students.updateOne({name:"Gowtham"}, {$unset:{fullTime: ""}})
+
+### Update Many
+db.students.updateMany({}, {$set:{fullTime: true}})
+
+### Update Many if fullTime fields doesn't exists
+db.students.updateMany({fullTime: {$exists: false}}, {$set:{fullTime: true}})
