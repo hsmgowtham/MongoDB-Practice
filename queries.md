@@ -113,3 +113,18 @@ db.students.find({$nor: [{fullTime: true}, {age: {$gt: 24}}]})
 
 ### $not
 db.students.find({age: {$not: {$lt: 24}}})
+
+## Indexes
+Quick lookup of a field.
+
+### Linear search
+db.students.find({name:"Hanuma"}).explain("executionStats")
+
+
+### Apply index
+db.students.createIndex({name: 1})
+
+### Get Indexes
+db.students.getIndexes()
+
+
