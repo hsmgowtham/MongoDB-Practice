@@ -12,6 +12,9 @@ use school
 #### Add data to school db by creating collections
 db.createCollection("students")
 
+### Drop Collections
+db.students.drop()
+
 #### Drop Database
 db.dropDatabase()
 
@@ -126,5 +129,17 @@ db.students.createIndex({name: 1})
 
 ### Get Indexes
 db.students.getIndexes()
+
+### Drop index
+db.students.dropIndex("name_1")
+
+
+## Collections
+
+### show
+show collections
+
+### create Collection
+db.createCollection("teachers", {capped:true, size:1000000, max:100}, {autoIndexId:false})
 
 
