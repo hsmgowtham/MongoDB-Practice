@@ -24,7 +24,7 @@ db.students.find()
 #### Instert many data into students
 db.students.insertMany([{name:"Patric", age:44, gpa: 3},{name:"Jackman", age:34, gpa: 3.4}])
 
-#### DataTypes
+## DataTypes
 db.students.insertOne(
     {name:"Hanuma",
      age:24,
@@ -40,3 +40,17 @@ db.students.insertOne(
      }
     }
     )
+
+## Sort and Limit Documents
+
+### Sort
+db.students.find().sort({name:1})
+db.students.find().sort({gpa:-1})
+Alphabetical/ascending order 1
+Reverse Alphabetical/descending order -1
+
+### Limit
+db.students.find().limit(1)
+
+### Together
+db.students.find().sort({gpa:-1}).limit(1)
