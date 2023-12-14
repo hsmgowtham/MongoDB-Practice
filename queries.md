@@ -82,3 +82,20 @@ db.students.updateMany({fullTime: {$exists: false}}, {$set:{fullTime: true}})
 ## Delete
 db.students.deleteOne({name:"Jackman"})
 db.students.deleteMany({registerDate:{$exists: false}})
+
+## Comparision Operators
+### Not Equal
+db.students.find({name:{$ne: "Gowtham"}})
+
+### less/greater than and less/greater than Equal
+db.students.find({age:{$gt: 20}})
+
+db.students.find({age:{$lte: 24}})
+
+db.students.find({gpa:{$gte:3.5, $lte: 4}})
+
+### in - matching values
+db.students.find({name:{$in:["Gowtham", "Hanuma"]}})
+
+### not in - not matching values
+db.students.find({name:{$nin:["Gowtham", "Hanuma"]}})
