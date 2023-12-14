@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "657a5b0878fe63322607cad3"
+  },
+  "name": "Gowtham",
+  "age": 24,
+  "gpa": 4,
+  "fullTime": true
+},
+{
+  "_id": {
+    "$oid": "657a5b7e78fe63322607cad4"
+  },
+  "name": "Patric",
+  "age": 44,
+  "gpa": 3,
+  "fullTime": true
+},
+{
+  "_id": {
+    "$oid": "657a5b7e78fe63322607cad5"
+  },
+  "name": "Jackman",
+  "age": 34,
+  "gpa": 3.4,
+  "fullTime": true
+},
+{
+  "_id": {
+    "$oid": "657a5ed078fe63322607cad6"
+  },
+  "name": "Hanuma",
+  "age": 24,
+  "gpa": 3.9,
+  "registerDate": {
+    "$date": "2023-12-14T01:48:00.739Z"
+  },
+  "graduationDate": null,
+  "course": [
+    "IR",
+    "Cloud",
+    "OS"
+  ],
+  "address": {
+    "street": "123 St",
+    "city": "Cincinnati",
+    "zip": 12345
+  },
+  "fullTime": true
+}]

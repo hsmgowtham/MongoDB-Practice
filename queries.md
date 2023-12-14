@@ -78,3 +78,7 @@ db.students.updateMany({}, {$set:{fullTime: true}})
 
 ### Update Many if fullTime fields doesn't exists
 db.students.updateMany({fullTime: {$exists: false}}, {$set:{fullTime: true}})
+
+## Delete
+db.students.deleteOne({name:"Jackman"})
+db.students.deleteMany({registerDate:{$exists: false}})
