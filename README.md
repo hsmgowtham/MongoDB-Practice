@@ -1,17 +1,15 @@
-# MongoDB-Practice
+## Key Terminologies in NoSQL - MongoDB
 
-### Document
-Group of Field value pairs
+- **Document**: Group of Field value pairs
+- **Collection**: Group of one or more documents
+- **Database**: Group of one or more Collections
 
-### Collection
-Group of one or more documents
+## Installation
 
-### Database
-Group of one or more Collections
+For MongoDB installation, follow the guide:
 
-### Installation
-https://www.mongodb.com/docs/manual/installation/
+- [MongoDB Installation Guide](https://www.mongodb.com/docs/manual/installation/)
 
-https://www.mongodb.com/docs/compass/current/install/
+For MongoDB Compass installation, refer to:
 
-
+- [MongoDB Compass Installation Guide](https://www.mongodb.com/docs/compass/current/install/)
