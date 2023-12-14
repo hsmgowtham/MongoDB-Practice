@@ -99,3 +99,17 @@ db.students.find({name:{$in:["Gowtham", "Hanuma"]}})
 
 ### not in - not matching values
 db.students.find({name:{$nin:["Gowtham", "Hanuma"]}})
+
+
+## Logical Operators
+### $and
+db.students.find({$and: [{fullTime: true}, {age: {$gt: 24}}]})
+
+### $or
+db.students.find({$or: [{fullTime: true}, {age: {$gt: 24}}]})
+
+### $nor - both false
+db.students.find({$nor: [{fullTime: true}, {age: {$gt: 24}}]})
+
+### $not
+db.students.find({age: {$not: {$lt: 24}}})
