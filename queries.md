@@ -54,3 +54,12 @@ db.students.find().limit(1)
 
 ### Together
 db.students.find().sort({gpa:-1}).limit(1)
+
+## Find
+.find({query},{projection})
+
+db.students.find({name:"Gowtham"})
+db.students.find({name:"Gowtham", gpa:4})
+
+db.students.find({},{name:true})
+db.students.find({},{_id: false, name:true, gpa: true})
